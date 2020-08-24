@@ -439,6 +439,7 @@ footer {
     p {
         color: $text;
         margin: 0;
+        font-size: 1em;
     }
 }
 
@@ -455,6 +456,9 @@ footer {
     border-bottom: 1px solid $border;
     h2 {
         color: $heading;
+    }
+    p {
+        font-size: 1em;
     }
 }
 
@@ -508,7 +512,7 @@ footer {
     }
     p {
         color: $text;
-        font-size: 0.9em;
+        font-size: 1em;
         margin: 0;
     }
 }
@@ -590,7 +594,7 @@ footer {
     ul {
         margin: 0;
         color: $text;
-        font-size: 0.9em;
+        font-size: 1em;
     }
     ul {
         padding: 0 0 0 15px;
@@ -616,7 +620,7 @@ footer {
 
 .project {
     position: relative;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -642,12 +646,12 @@ footer {
     p {
         color: $text;
         margin: 0 0 15px 0;
-        font-size: 0.9em;
+        font-size: 1em;
     }
     li {
         color: $text;
         margin: 0 0 15px 0;
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
@@ -835,6 +839,9 @@ footer {
 
 // Medium Devices
 @media only screen and (max-width: 992px) {
+    body:after {
+        content: "medium-screen";
+    }
     #lead {
         height: auto;
         min-height: auto;
@@ -863,6 +870,9 @@ footer {
 
 // Small Devices
 @media only screen and (max-width: 768px) {
+    body:after {
+        content: "small-screen";
+    }
     header {
         position: fixed;
         display: none;
@@ -926,6 +936,9 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width: 480px) {
+    body:after {
+        content: "extra-small-screen";
+    }
     #lead-content {
         h1 {
             font-size: 1.5em;

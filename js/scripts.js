@@ -70,7 +70,7 @@
         $this.find('.vtimeline-content').each(function() {
             var date = $(this).data('date');
             if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+                $(this).parent().prepend('<span class="vtimeline-date">' + date + '</span>');
             }
         });
 
@@ -87,11 +87,21 @@
     });
 
     // Load additional projects
-    $('#view-more-projects').click(function(e){
+    $('#view-more-projects').click(function(e) {
         e.preventDefault();
         $(this).fadeOut(300, function() {
             $('#more-projects').fadeIn(300);
         });
     });
+
+
+    var mql_small = window.matchMedia('(max-width: 767px)');
+    mql_small.addListener(function(e) {
+        if (e.matches) {
+            alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen");
+        }
+    });
+
+
 
 })(jQuery);
