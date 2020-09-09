@@ -9,7 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('scripts', function() {
     return gulp.src('js/scripts.js')
         .pipe(plumber(plumber({
-            errorHandler: function (err) {
+            errorHandler: function(err) {
                 console.log(err);
                 this.emit('end');
             }
@@ -19,14 +19,14 @@ gulp.task('scripts', function() {
                 comments: '/^!/'
             }
         }))
-        .pipe(rename({extname: '.min.js'}))
+        .pipe(rename({ extname: '.min.js' }))
         .pipe(gulp.dest('js'));
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', function() {
     return gulp.src('./scss/styles.scss')
         .pipe(wait(250))
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 

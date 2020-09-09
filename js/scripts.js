@@ -9,6 +9,7 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
+const enquire = require(["enquire.js"]);
 
 (function($) {
 
@@ -95,13 +96,28 @@
     });
 
 
-    var mql_small = window.matchMedia('(max-width: 767px)');
-    mql_small.addListener(function(e) {
-        if (e.matches) {
+    // var mql_small = window.matchMedia('(max-width: 767px)');
+    // mql_small.addListener(function(e) {
+    //     if (e.matches || true) {
+    //         alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen.");
+    //     }
+    // });
+
+    // // if (screen.width < 768) {
+    // //     alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen");
+    // // }
+
+    // console.log(screen.width);
+
+    enquire.register("screen and (max-width: 768px)", {
+        match: function() {
             alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen");
-        }
+        },
+
+        setup: function() {
+            alert("putp");
+        },
+
     });
-
-
 
 })(jQuery);

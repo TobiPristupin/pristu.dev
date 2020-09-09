@@ -867,9 +867,6 @@ footer {
 
 // Small Devices
 @media only screen and (max-width: 768px) {
-    body:after {
-        content: "small-screen";
-    }
     header {
         position: fixed;
         display: none;
@@ -933,9 +930,6 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width: 480px) {
-    body:after {
-        content: "extra-small-screen";
-    }
     #lead-content {
         h1 {
             font-size: 1.5em;
