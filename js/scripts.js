@@ -9,7 +9,6 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
-const enquire = require(["enquire.js"]);
 
 (function($) {
 
@@ -95,6 +94,24 @@ const enquire = require(["enquire.js"]);
         });
     });
 
+    function hideAllCarousels(){
+        $("#carouselModalBody").children().each(function () {
+            $(this).prop("hidden", true)
+        })
+    }
+
+    $("#more_images_water_my_plant").click(function (e) {
+        hideAllCarousels()
+        $("#waterMyPlantCarousel").prop("hidden", false)
+        $("#carouselModal").modal("show")
+    })
+
+    $("#more_images_minimal_running").click(function (e) {
+        hideAllCarousels()
+        $("#minimalRunningCarousel").prop("hidden", false)
+        $("#carouselModal").modal("show")
+    })
+
 
     // var mql_small = window.matchMedia('(max-width: 767px)');
     // mql_small.addListener(function(e) {
@@ -109,15 +126,15 @@ const enquire = require(["enquire.js"]);
 
     // console.log(screen.width);
 
-    enquire.register("screen and (max-width: 768px)", {
-        match: function() {
-            alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen");
-        },
+    // enquire.register("screen and (max-width: 768px)", {
+    //     match: function() {
+    //         alert("Hey, your screen is too small to display images. For the best experience please open this website on a larger screen");
+    //     },
 
-        setup: function() {
-            alert("putp");
-        },
+    //     setup: function() {
+    //         alert("putp");
+    //     },
 
-    });
+    // });
 
 })(jQuery);

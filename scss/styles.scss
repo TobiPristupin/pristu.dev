@@ -29,6 +29,10 @@
         12. Media Queries
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*
     ------------------------
@@ -622,7 +626,7 @@ footer {
     position: relative;
     max-width: 1100px;
     margin: 0 auto 30px auto;
-    overflow: hidden;
+    overflow: auto;
     background: #fff;
     border-radius: 4px;
 }
