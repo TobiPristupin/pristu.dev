@@ -947,3 +947,16 @@ footer {
         }
     }
 }
+
+.carousel-inner>.carousel-item>img {
+    max-height: 800px;
+    object-fit: contain;
+}
+
+.carousel-control-next-black,
+.carousel-control-prev-black
+/*, .carousel-indicators */
+
+{
+    filter: invert(100%);
+}

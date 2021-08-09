@@ -112,6 +112,7 @@
         $("#carouselModal").modal("show")
     })
 
+    //test
     $("#more_images_journaly").click(function (e) {
         hideAllCarousels()
         $("#journalyCarousel").prop("hidden", false)
