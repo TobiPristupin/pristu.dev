@@ -112,6 +112,12 @@
         $("#carouselModal").modal("show")
     })
 
+    $("#more_images_journaly").click(function (e) {
+        hideAllCarousels()
+        $("#journalyCarousel").prop("hidden", false)
+        $("#carouselModal").modal("show")
+    })
+
 
     // var mql_small = window.matchMedia('(max-width: 767px)');
     // mql_small.addListener(function(e) {
