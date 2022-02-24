@@ -1,3 +1,4 @@
+<!-- TODO  Add Stripe incoming Add images to work section left align, weights -->
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -8,8 +9,10 @@
     <title>Tobias Pristupin</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +30,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
-    <header>
+    <!-- <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
@@ -51,7 +54,7 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-    </header>
+    </header> -->
     <!-- End header -->
 
     <div id="lead">
@@ -76,10 +79,10 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <p>
                         Hi, I'm Tobi. My passions lie at the intersection between Computer Science and Mathematics. I have been programming since age 13, and have experience with systems programming, compilers/kernel development, mobile development, and competitive programming.
 
@@ -105,8 +108,7 @@
             <p>
                 <ul>
                     <li>
-                        GPA 3.98/4. Awarded the John B. Ervin scholarship: $240k Full ride scholarship awarded to ~25 students per year. Relevant coursework: Data Structures and Algorithms (A+), Discrete Mathematics (A+), Linear Algebra I (A+), Full Stack Web Development (A+),
-                        Probability (A), Systems Software (A+). (A+).
+                        GPA 3.98/4. Awarded the John B. Ervin scholarship: $240k Full ride scholarship given to ~25 students per year.
                     </li>
                     <li>
                         During Fall 2021 I worked as a research assistant at the Parallel Computing Technology Group. My research involved working jointly with a PhD student to develop a cluster environment for a distributed ACID DB (FoundationDB).
@@ -119,9 +121,16 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="June 2022 – August 2022">
+                <h3>Stripe</h3>
+                <h4>Software Engineering Intern (NYC)</h4>
+                <p>
+                    Incoming SWE Intern.
+                </p>
+            </div>
             <div data-date="June 2021 – August 2021">
-                <h3>Facebook</h3>
-                <h4>University Software Engineering Intern</h4>
+                <h3>Meta (Facebook)</h3>
+                <h4>University Software Engineering Intern (Menlo Park, CA)</h4>
                 <p>
                     <ul>
                         <li>
@@ -147,7 +156,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="300" height="350" src="images/lambda.svg" />
+                        <img width="250" height="300" src="images/lambda.svg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -168,46 +177,65 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="300" height="350" src="images/journaly/logo-min.png" />
+                        <img width="250" height="250" src="images/washu.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Real Time Scheduling Research</h3>
+                        <p>
+                            Researching the multi threaded performance of Cyclone DDS, with the goal of identifying potential solutions for reducing unbounded latency events in highly dynamic real-time systems. Working with Professor Chris Gill at WashU, and collaborating with researchers
+                            at the Max Plank Institute in Germany.
+                        </p>
+
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9470451" target="_blank">Paper from MPI</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img width="250" height="250" src="images/memory_hierarchy.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Teaching</h3>
+                        <p>
+                            I have served as Teaching Assistant for
+                        </p>
+
+                        <ul>
+                            <li>CSE 361 "Systems Software" taught by I-Ting Angelina Lee (current)</li>
+                            <li>CSE 240 "Discrete Mathematics" taught by Brian Garnett</li>
+                        </ul>
+
+                        <p>Teaching assistants are elected by professors based on outstanding performance in the class. My duties include hosting office hours for other students to help them with the course material, as well as grading.</p>
+
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img width="250" height="300" src="images/journaly/logo-min.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Journaly </h3>
                         <p>
-                            Journaly was the project I worked on during my Facebook internship, as the sole developer. Journaly is a journaling and community building app. Users can make journal entries, and Journaly will use machine learning to identify the emotions of that entry.
-                            If Jounraly notices that a user has been posting a lot of negative content, it will encourage that user's followers to reach out to them, helping them build a support network. <br><br> Journaly uses
-                            Firebase Auth + Realtime Database + Cloud Storage, Google NLP Cloud API, Dicebear API, RxJava, Retrofit, and JUnit for unit testing. Main focus was placed on scalability of the backend. Estimates show that Journaly can scale
-                            up to 100k users.
+                            Journaly was the project I worked on during my Facebook internship. Journaly is a journaling and community building app. Users can make journal entries, and Journaly will use machine learning to identify the emotions of that entry. If Journaly notices
+                            that a user has been posting a lot of negative content, it will encourage that user's followers to reach out to them, helping them build a support network. <br><br> Journaly uses Firebase Auth +
+                            Realtime Database + Cloud Storage, Google NLP Cloud API, Dicebear API, RxJava, Retrofit, and JUnit for unit testing. Main focus was placed on scalability of the backend. Estimates show that Journaly can scale up to 100k users.
                         </p>
                         <button type="button" class="btn btn-outline-dark btn-lg" id="more_images_journaly">Images</button>&emsp;&ensp; <a href="https://github.com/TobiPristupin/journaly" target="_blank">Github</a> &emsp;&ensp;
                     </div>
                     <!-- End .project-info -->
                 </div>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="300" height="300" src="images/icon_square.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Minimal Running</h3>
-                        <p>
-                            Minimal Running is an Android application that allows users to track their running, visualize it, and securely sync it with the cloud using an email or Google account. Minimal Running taught me how to work with a large codebase, use version control, and
-                            effectively apply design patterns, as well as the nuances of deploying code to users all around the world. Find it on the Play Store.
-                        </p>
-                        <button type="button" class="btn btn-outline-dark btn-lg" id="more_images_minimal_running">Images</button>&emsp;&ensp; <a href="https://github.com/TobiPristupin/RUN" target="_blank">Github</a> &emsp;&ensp;
-                        <a href="https://play.google.com/store/apps/details?id=com.tobipristupin.simplerun" target="_blank">Play Store</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
                 <!-- End .project -->
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="300" height="300" src="images/water-min.jpg" />
+                        <img width="250" height="250" src="images/water-min.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -225,7 +253,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="300" height="300" src="images/rc_car-min.jpg" />
+                        <img width="250" height="250" src="images/rc_car-min.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -240,7 +268,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="300" height="400" src="images/terrain.jpg" />
+                        <img width="250" height="400" src="images/terrain.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
