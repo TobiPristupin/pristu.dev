@@ -86,9 +86,9 @@
                     <p>
                         Hi, I'm Tobi. My passions lie at the intersection between Computer Science and Mathematics. I have been programming since age 13, and have experience with systems programming, compilers/kernel development, mobile development, and competitive programming.
 
-                        <br><br> I have interned as a Software Engineer at Meta (Facebook) and Stripe.
+                        <br><br> I have worked as a Software Engineering Intern at Meta and Stripe, and I am working at Optiver this summer.
                         <br><br> I study Computer Science and Mathematics at Washington University in St. Louis, where I am part of the John B. Ervin Scholars, a merit scholarship program based on academic excellence, leadership, community service, and
-                        diversity. Other interests of mine include: sustainable cities/transit, thrifting and collecting vintage clothing, and running/cycling/soccer/any sport really.
+                        diversity. Other interests of mine include: urban planning, public transit and cycling advocacy, vintage clothing, and soccer.
                         <br><br> For the best viewing experience, please open this website on a computer/tablet.
 
                     </p>
@@ -108,7 +108,7 @@
             <p>
                 <ul>
                     <li>
-                        GPA 3.98/4. Awarded the John B. Ervin scholarship: $240k Full ride scholarship given to ~25 students per year.
+                        GPA 3.99/4. Awarded the John B. Ervin scholarship: $240k Full ride scholarship given to ~25 students per year.
                     </li>
                     <li>
                         Currently I am the president of Servin, a community service organization within the John B. Ervin scholarship. I coordinate volunteering and outreach events with Ervin students and St. Louis organizations in need of help.
@@ -121,9 +121,20 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="June 2022 – August 2022">
+            <div data-date="June 2023 – August 2023">
+                <h3>Optiver</h3>
+                <h4>Software Engineer Intern (Chicago)</h4>
+                <p>
+                    <ul>
+                        <li>Developed and deployed a real time trading compliance monitoring app. </li>
+                        <li> Improved speed of a critical compliance pipeline by ~60% by optimizing data processing. Enhanced reliability of pipeline to prevent failures.</li>
+                    </ul>
+
+                </p>
+            </div>
+            <div data-date="May 2022 – August 2022">
                 <h3>Stripe</h3>
-                <h4>Software Engineering Intern (NYC)</h4>
+                <h4>Software Engineer Intern (NYC)</h4>
                 <p>
                     <ul>
                         <li>
@@ -142,8 +153,8 @@
                 </p>
             </div>
             <div data-date="June 2021 – August 2021">
-                <h3>Meta (Facebook)</h3>
-                <h4>University Software Engineering Intern (Menlo Park, CA)</h4>
+                <h3>Meta</h3>
+                <h4>University Software Engineer Intern (Menlo Park)</h4>
                 <p>
                     <ul>
                         <li>
@@ -169,6 +180,23 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
+                        <img width="250" height="250" src="images/markov.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Computer Security & Privacy Lab</h3>
+                        <p>
+                            Developed a C++ framework for statistical analysis of Linux PMU performance counters. PMU counters are hardware counters that can be used to count performance events (cache misses, branch predictions, cycles, etc.). PMU counters suffer from unreliable
+                            data, so our team developed a novel approach that works in user space and kernel space to improve the data's accuracy.
+                            <br><br> This work was submitted to ACM's Operating System's Principles and is awaiting acceptance.
+                        </p>
+                        <a href="https://cybersecurity.seas.wustl.edu/" target="_blank">CSPL Lab</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
                         <img width="250" height="300" src="images/lambda.svg" />
                     </div>
                     <!-- End .project-image -->
@@ -190,7 +218,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img width="250" height="250" src="images/washu.png" />
+                        <img width="250" height="250" src="images/latency-sync-listener.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -202,7 +230,7 @@
                             I managed to reduce max latency of CycloneDDS by 5% by tuning message payload size in relation to the network stack configuration. I also identified sources of lock contention and reduced them by improving the synchronization approach, limiting time spent
                             in kernel space and improving latency.
                         </p>
-
+                        <a href="https://github.com/TobiPristupin/RTS-Research/blob/main/writeup_summary.md" target="_blank">CycloneDDS Latency Paper</a>&emsp;&ensp;
                         <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9470451" target="_blank">Paper from MPI</a>
                     </div>
                     <!-- End .project-info -->
@@ -324,6 +352,7 @@
             <li>Python</li>
             <li>Java</li>
             <li>C</li>
+            <li>C++</li>
             <li>Linux</li>
             <li>Systems Programming</li>
             <li>Kernel Programming</li>
